@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+portfolio-web
+db.sqlite3
+/static
+.DS_Store
