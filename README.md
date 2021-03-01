@@ -53,22 +53,22 @@ source <virtual_env_name>/bin/activate
 │   │       └───js
 │   ├───templates
 │   │   └───pages
-|   |       ├───about.html
-|   |       └───base.html
-|   |   
+│   │       ├───about.html
+│   │       └───base.html
+│   │   
 │   ├───__init__.py
-|   ├───admin.py
-|   ├───apps.py
-|   ├───models.py
-|   ├───tests.py
-|   ├───urls.py
-|   └───views.py
+│   ├───admin.py
+│   ├───apps.py
+│   ├───models.py
+│   ├───tests.py
+│   ├───urls.py
+│   └───views.py
 ├───portfolioweb
-|   ├───__init__.py
-|   ├───asgi.py
-|   ├───settings.py
-|   ├───urls.py
-|   └───wsgi.py
+│   ├───__init__.py
+│   ├───asgi.py
+│   ├───settings.py
+│   ├───urls.py
+│   └───wsgi.py
 ├───.gitignore
 ├───README.md
 └───manage.py
