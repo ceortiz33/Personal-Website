@@ -60,5 +60,12 @@ All html pages are in the pages/template/pages
 │   ├───templates
 │   │   └───pages
 │   └───__pycache__
+├───portfolioweb
+|   ├───__init__.py
+|   ├───asgi.py
+|   ├───settings.py
+|   ├───urls.py
+|   └───wsgi.py
+
 
 ```
