@@ -59,6 +59,9 @@ All html pages are in the pages/template/pages
 │   │       └───js
 │   ├───templates
 │   │   └───pages
+|   |       ├───about.html
+|   |       └───base.html
+|   |   
 │   └───__pycache__
 ├───portfolioweb
 |   ├───__init__.py
