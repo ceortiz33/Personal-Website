@@ -3,7 +3,17 @@ Django version of my personal website
 
 # Get Started
 
-- Install python on your system
+### Windows 
+
+Install python on your system [Python for Windows](https://www.python.org/downloads/windows/)
+
+### Debian-based Linux
+
+```
+sudo apt-get install python3
+```
+
+
 - Install pip ```sudo apt-get install python3-pip```
 
 ## Install virtualenv using pip3(Optional)
