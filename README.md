@@ -40,18 +40,12 @@ source <virtual_env_name>/bin/activate
 - Run server ``` python3 manage.py runserver ```
 - Go to localhost http://localhost:8000
 
-### HTML pages
-
-All html pages are in the pages/template/pages
-
-### Static Files (CSS, Javascript)
-
-/pages/static/pages
+### Project Tree
 
 ```bash
 ├───pages
 │   ├───migrations
-│   │   └───__init.py__
+│   │   └───__init__.py
 │   ├───static
 │   │   └───pages
 │   │       ├───css
@@ -62,7 +56,13 @@ All html pages are in the pages/template/pages
 |   |       ├───about.html
 |   |       └───base.html
 |   |   
-│   └───__pycache__
+│   ├───__init__.py
+|   ├───admin.py
+|   ├───apps.py
+|   ├───models.py
+|   ├───tests.py
+|   ├───urls.py
+|   └───views.py
 ├───portfolioweb
 |   ├───__init__.py
 |   ├───asgi.py
@@ -72,6 +72,4 @@ All html pages are in the pages/template/pages
 ├───.gitignore
 ├───README.md
 └───manage.py
-
-
 ```
