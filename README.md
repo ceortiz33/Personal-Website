@@ -47,3 +47,18 @@ All html pages are in the pages/template/pages
 ### Static Files (CSS, Javascript)
 
 /pages/static/pages
+
+```bash
+├───pages
+│   ├───migrations
+│   │   └───__pycache__
+│   ├───static
+│   │   └───pages
+│   │       ├───css
+│   │       ├───images
+│   │       └───js
+│   ├───templates
+│   │   └───pages
+│   └───__pycache__
+
+```
