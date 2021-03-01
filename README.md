@@ -66,6 +66,9 @@ All html pages are in the pages/template/pages
 |   ├───settings.py
 |   ├───urls.py
 |   └───wsgi.py
+├───.gitignore
+├───README.md
+└───manage.py
 
 
 ```
