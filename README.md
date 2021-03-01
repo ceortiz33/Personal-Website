@@ -22,3 +22,10 @@ source <virtual_env_name>/bin/activate
 - Run server ``` python3 manage.py runserver ```
 - Go to localhosts http://localhost:8000
 
+### HTML pages
+
+All html pages are in the pages/template/pages
+
+### Static Files (CSS, Javascript)
+
+/pages/static/pages
