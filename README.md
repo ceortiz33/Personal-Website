@@ -51,7 +51,7 @@ All html pages are in the pages/template/pages
 ```bash
 ├───pages
 │   ├───migrations
-│   │   └───__pycache__
+│   │   └───__init.py__
 │   ├───static
 │   │   └───pages
 │   │       ├───css
