@@ -30,21 +30,15 @@ virtualenv <virtual_env_name>
 source <virtual_env_name>/bin/activate
 ```
 
-
-## Install virtualenv using pip3(Optional)
-
-
-
-
-
 ### How to install Django
 
 ```
   pip3 install django
 ```
 
+### Run Server in local machine
 - Run server ``` python3 manage.py runserver ```
-- Go to localhosts http://localhost:8000
+- Go to localhost http://localhost:8000
 
 ### HTML pages
 
