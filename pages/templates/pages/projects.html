@@ -1,15 +1,15 @@
 {% extends "pages/base.html" %}
 {% load static %}
-{% block teams %}
+{% block projects %}
 
-<!-- Teams Section start -->
+<!-- projects Section start -->
 	<section class="teams" id="teams">
 		<div class="max-width">
-			<h2 class="title">My Team</h2>
+			<h2 class="title">Projects</h2>
 			<div class="carousel owl-carousel">
 				<div class="card">
 					<div class="box">
-						<img src="{% static pages/'images/perfil.jpg' %}" alt="">
+						<img src="{% static 'pages/images/perfil.jpg' %}" alt="">
 						<div class="text">Someone name</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -88,4 +88,4 @@
 			</div>
 		</div>
 	</section>
-{% endblock teams %}
+{% endblock projects %}

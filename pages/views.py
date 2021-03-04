@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def home(request):
 	"""The home page"""
-	return render(request, "pages/base.html")
+	return render(request, "pages/home.html")
 
 def  about(request):
 	"""The about page of my portfolio"""
@@ -17,9 +17,9 @@ def skills(request):
 	"""The skills page of my portfolio"""
 	return render(request,"pages/skills.html")
 
-def teams(request):
+def projects(request):
 	"""The teams page of my portfolio"""
-	return render(request,"pages/teams.html")
+	return render(request,"pages/projects.html")
 
 def contacts(request):
 	"""The contacts page of my portfolio"""

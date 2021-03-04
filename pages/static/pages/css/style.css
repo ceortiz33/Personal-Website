@@ -29,7 +29,7 @@
 
 .navbar.sticky{
 	padding: 30px 0;
-	background: crimson;
+	background: #b9152c;
 }
 
 
@@ -72,7 +72,7 @@
 }
 
 .navbar .logo a span{
-	color: salmon;
+	color: #b9152c;
 	transition: all 0.3s ease;
 }
 
@@ -92,7 +92,7 @@
 	position: fixed;
 	height: 45px;
 	width: 42px;
-	background: crimson;
+	background: #b9152c;
 	right: 30px;
 	bottom: 30px;
 	text-align: center;
@@ -148,19 +148,19 @@
 }
 
 .home .home-content .text-3 span{
-	color: crimson;
+	color: #b9152c;
 	font-weight: 500;
 }
 
 .home .home-content a{
 	display: inline-block;
-	background: crimson;
+	background: #b9152c;
 	color: #fff;
 	font-size: 25px;
 	padding: 12px 36px;
 	margin-top: 20px;
 	border-radius: 6px;
-	border: 2px solid crimson;
+	border: 2px solid #b9152c;
 	transition: all 0.3s ease;
 }
 
@@ -211,7 +211,7 @@ section .title::after{
 	bottom: -12px;
 	left: 50%;
 	font-size: 20px;
-	color: crimson;
+	color: #b9152c;
 	padding: 5px;
 	background:  #fff;
 	transform: translateX(-50%);
@@ -251,7 +251,7 @@ section .title::after{
 }
 
 .about .about-content .right .text span{
-	color: crimson;
+	color: #b9152c;
 }
 
 .about .about-content .right p{
@@ -261,19 +261,19 @@ section .title::after{
 
 .about .about-content .right a{
 	display: inline-block;
-	background: crimson;
+	background: #b9152c;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 500;
 	padding: 10px 30px;
 	margin-top: 20px;
 	border-radius: 6px;
-	border: 2px solid crimson;
+	border: 2px solid #b9152c;
 	transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover{
-	color: crimson;
+	color: #b9152c;
 	background: none;
 }
 
@@ -305,7 +305,7 @@ section .title::after{
 }
 
 .services .serv-content .card:hover{
-	background: crimson;
+	background: #b9152c;
 }
 
 
@@ -319,7 +319,7 @@ section .title::after{
 
 .services .serv-content .card i{
 	font-size: 50px;
-	color: crimson;
+	color: #b9152c;
 	transition: color 0.3s ease;
 }
 
@@ -333,6 +333,30 @@ section .title::after{
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
+
+
+/* contact y projects*/
+
+.skills, .contact{
+	color: #fff;
+	background: #111;
+}
+
+.skills .title:before, .contact .title::before{
+	background: #fff;
+
+}
+
+.skills .title:after, .contact .title::after{
+	background: #111;
+	content: "what i provide";
+}
+
+
+
+
+
+
 
 /* Skills Section Styling*/
 
@@ -356,19 +380,19 @@ section .title::after{
 
 .skills .skills-content .left a{
 	display: inline-block;
-	background: crimson;
+	background: #b9152c;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 500;
 	padding: 10px 30px;
 	margin-top: 20px;
 	border-radius: 6px;
-	border: 2px solid crimson;
+	border: 2px solid #b9152c;
 	transition: all 0.3s ease;
 }
 
 .skills .skills-content .left a:hover{
-	color: crimson;
+	color: #b9152c;
 	background: none;
 }
 
@@ -402,7 +426,7 @@ section .title::after{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: crimson;
+	background: #b9152c;
 }
 
 .skills-content .right .html::before{
@@ -427,7 +451,7 @@ section .title::after{
 
 /* Teams Section Styling */
 .teams .title::after{
-	content: "who with me";
+	content: "my work";
 }
 
 .teams .carousel .card{
@@ -439,7 +463,7 @@ section .title::after{
 }
 
 .teams .carousel .card:hover{
-	background: crimson;
+	background: #b9152c;
 }
 
 
@@ -467,7 +491,7 @@ section .title::after{
 	width: 150px;
 	object-fit: cover;
 	border-radius: 50%;
-	border: 5px solid crimson;
+	border: 5px solid #b9152c;
 }
 
 .teams .carousel .card:hover img{
@@ -487,7 +511,7 @@ section .title::after{
 	margin: 0 5px;
 	outline: none!important;
 	border-radius: 50%;
-	border: 2px solid crimson!important;
+	border: 2px solid #b9152c!important;
 }
 
 .owl-dot.active{
@@ -497,7 +521,7 @@ section .title::after{
 
 .owl-dot.active,
 .owl-dot:hover{
-	background: crimson!important;
+	background: #b9152c!important;
 }
 
 /* Contact Section Styling */
@@ -535,7 +559,7 @@ section .title::after{
 
 .contact .contact-content .row i{
 	font-size: 25px;
-	color: crimson;
+	color: #b9152c;
 }
 
 .contact .contact-content .info .head{
@@ -543,7 +567,7 @@ section .title::after{
 }
 
 .contact .contact-content .info .sub-title{
-	color: #333;
+	color: #d0d0d0;
 }
 
 .contact .right form .fields{
@@ -596,8 +620,8 @@ section .title::after{
 .contact .right form .button button{
 	width: 100%;
 	height: 100%;
-	border: 2px solid crimson;
-	background: crimson;
+	border: 2px solid #b9152c;
+	background: #b9152c;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 500;
@@ -607,7 +631,7 @@ section .title::after{
 }
 
 .contact .right form .button button:hover{
-	color: crimson;
+	color: #b9152c;
 	background: none;
 }
 
@@ -621,7 +645,7 @@ footer{
 }
 
 footer span a{
-	color: crimson;
+	color: #b9152c;
 	text-decoration: none;
 }
 

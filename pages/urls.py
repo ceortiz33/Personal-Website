@@ -15,7 +15,7 @@ urlpatterns = [
 	#Page that show skills section
 	path('skills/',views.skills, name='skills'),
 	#Page that show teams section
-	path('teams/',views.teams, name='teams'),
+	path('projects/',views.projects, name='projects'),
 	#Page that show contacts section
 	path('contacts/',views.contacts, name='contacts'),
 ]
