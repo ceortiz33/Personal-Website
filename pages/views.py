@@ -1,5 +1,8 @@
 from django.views.generic import View
 from django.shortcuts import render
+from github import Github
+
+from project.models import Project
 
 def home(request):
 	"""The home page"""
@@ -19,6 +22,10 @@ def skills(request):
 
 def projects(request):
 	"""The teams page of my portfolio"""
+	g = Github("token")
+	for repo in g.get_user().get_repos():
+		print(repo.name)
+
 	return render(request,"pages/projects.html")
 
 def contacts(request):
