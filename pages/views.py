@@ -24,7 +24,7 @@ def skills(request):
 def projects(request):
 	"""The teams page of my portfolio"""
 	projects = []
-	g = Github("29035651785d97e40f095706ad152b32c74da042")
+	g = Github("TOKEN-REEMPLAZAR")
 	pj = { 'Title': [],
 		   'Description': [],
 		   'Language': [],
