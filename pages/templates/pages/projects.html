@@ -6,86 +6,31 @@
 	<section class="teams" id="teams">
 		<div class="max-width">
 			<h2 class="title">Projects</h2>
-			<div class="carousel owl-carousel">
-				<div class="card">
-					<div class="box">
-						<img src="{% static 'pages/images/perfil.jpg' %}" alt="">
-						<div class="text">Someone name</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</div>
 
-
-				<div class="card">
-					<div class="box">
-						<img src="{% static 'pages/images/perfil.jpg' %}" alt="">
-					<div class="text">Someone name</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="box">
-						<img src="{% static 'pages/images/perfil.jpg' %}" alt="">
-					<div class="text">Someone name</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="box">
-						<img src="{% static 'pages/images/perfil.jpg' %}" alt="">
-					<div class="text">Someone name</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="box">
-						<img src="{% static 'pages/images/perfil.jpg' %}" alt="">
-					<div class="text">Someone name</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-					</div>
-				</div>
-
-
-
-
-
-			</div>
+			<div style="overflow-x:auto;">
+				<table class="table">
+					<thead>
+						<th>Title</th>
+						<th>Description</th>
+						<th>Language</th>
+						<th>Created at</th>
+						<th>Size</th>
+						<th>Stars</th>
+					</thead>
+					<tbody>
+						{% for project in allProjects %}
+						<tr>
+							<td>{{project.Title}}</td>
+							<td>{{project.Description}}</td>
+							<td>{{project.Language}}</td>
+							<td>{{project.Createdat}}</td>
+							<td>{{project.Size}}</td>
+							<td>{{project.Stars}}</td>
+						<tr>
+						{% endfor %}
+					</tbody>
+				
+				</table>
 		</div>
 	</section>
 {% endblock projects %}
