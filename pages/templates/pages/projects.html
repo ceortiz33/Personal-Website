@@ -20,7 +20,7 @@
 					<tbody>
 						{% for project in allProjects %}
 						<tr>
-							<td>{{project.Title}}</td>
+							<td><a class="no-color" href="{{project.Urls}}">{{project.Title}}</a></td>
 							<td>{{project.Description}}</td>
 							<td>{{project.Language}}</td>
 							<td>{{project.Createdat}}</td>

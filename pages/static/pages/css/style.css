@@ -126,12 +126,23 @@
 	border: 1px solid #ddd;
 	text-align: center;
 	font-size: 16px;
+
 }
 
 .table th{
 	background-color: #b9152c;
-
+	position: relative;
 }
+
+.no-color{
+	color:inherit;
+}
+
+.no-color:hover{
+	text-decoration: underline;
+}
+
+
  /* Home Section Styling */
  .home{
  	display: flex;

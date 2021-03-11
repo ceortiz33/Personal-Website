@@ -24,25 +24,27 @@ def skills(request):
 def projects(request):
 	"""The teams page of my portfolio"""
 	projects = []
-	g = Github("TOKEN-REEMPLAZAR")
+	g = Github("CHANGE TOKEN")
 	pj = { 'Title': [],
 		   'Description': [],
 		   'Language': [],
 		   'Createdat':[],
 		   'Size': [],
 		   'Stars': [],
+		   'Urls': [],
 	}
 
 	allProjects=[]
 	for repo in g.get_user().get_repos():
-		project = Project(repo.name, repo.description, repo.language, repo.created_at, repo.size, repo.stargazers_count)
+		project = Project(repo.name, repo.description, repo.language, repo.created_at, repo.size, repo.stargazers_count, repo.html_url)
 		pj['Title'].append(project.title)
 		pj['Description'].append(project.description)
 		pj['Language'].append(project.language)
 		pj['Createdat'].append(project.date_created)
 		pj['Size'].append(project.size)
 		pj['Stars'].append(project.stars)
-	df = pd.DataFrame(pj, columns= ['Title', 'Description', 'Language', 'Createdat', 'Size', 'Stars'])
+		pj['Urls'].append(project.urls)
+	df = pd.DataFrame(pj, columns= ['Title', 'Description', 'Language', 'Createdat', 'Size', 'Stars', 'Urls'])
 	print(df)
 	for i in range(df.shape[0]):
 		temp = df.loc[i]
