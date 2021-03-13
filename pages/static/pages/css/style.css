@@ -294,6 +294,7 @@ section .title::after{
 	font-weight: 500;
 	padding: 10px 30px;
 	margin-top: 20px;
+	margin-left: 35%;
 	border-radius: 6px;
 	border: 2px solid #b9152c;
 	transition: all 0.3s ease;
