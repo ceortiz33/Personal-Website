@@ -663,6 +663,13 @@ section .title::after{
 	background: none;
 }
 
+.contact .right .message-sent{
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+
+
 
 /* Footer Styling Section */
 

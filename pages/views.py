@@ -2,6 +2,8 @@ from django.views.generic import View
 from django.shortcuts import render
 from github import Github
 from .project import Project
+from .models import Contact
+from django.http import HttpResponse
 import pandas as pd
 
 def home(request):
@@ -54,4 +56,16 @@ def projects(request):
 
 def contacts(request):
 	"""The contacts page of my portfolio"""
+	if request.method=="POST":
+		contact=Contact()
+		name=request.POST.get('name')
+		email=request.POST.get('email')
+		subject=request.POST.get('subject')
+		message=request.POST.get('message')
+		contact.name= name
+		contact.email=email
+		contact.subject=subject
+		contact.message=message
+		contact.save()
+		return render(request, 'pages/confirmation-message.html')
 	return render(request,"pages/contacts.html")
